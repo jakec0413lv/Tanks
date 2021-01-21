@@ -1,0 +1,84 @@
+#title{
+    width: 350px;
+    height: 100px;
+    margin: 0 auto;
+    border: black 2px;
+    border-radius: 5%;
+    background-image: url("TanksTitle.PNG");
+    background-size: cover;
+}
+
+#scoreboard{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:200px;
+    height: 100px;
+    border: 2px black solid;
+    margin: 0 auto;
+}
+
+#scoreboard p {
+    margin: 0;
+}
+
+#playing-field{
+    margin: 0 auto;
+    width: 1100px;
+    height: 400px;
+    border: 2px black double;
+    position: relative;
+    background-image: url("https://png.pngtree.com/back_origin_pic/03/78/11/657d360f162289192d0c691a6fa6cae0.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#object {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#object2 {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#tank-1 {
+    width: 25px;
+    height: 20px;
+    background-color: blue;
+    background-image: url("BlueTank.jpg");
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#tank-2 {
+    width: 25px;
+    height: 20px;
+    background-color: red;
+    background-image: url("RedTank.jpg");
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    right: 75px;
+}
+
+
+#blue-shot h3{
+    color: blue;
+}
+
+#red-shot h3{
+    color: red;
+}

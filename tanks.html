@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tanks</title>
+        <link href="./tanks.css" type = "text/css" rel = "stylesheet">
+    </head>
+
+    <body>
+        <div id = "title"></div>
+        <div id = "playing-field">
+            <div id = "object" style = "display:none"> </div>
+            <div id = "object2" style= "display:none"> </div>
+            <div id = "tank-1"></div>
+            <div id = "tank-2"></div>
+            <button onclick = "Reset()">Reset</button>
+            <div id = scoreboard>
+                <p>Score</p>
+                <p id = "blue-score" style= "color:blue">0</p>
+                <p id = "red-score" style = "color:red">0</p>
+            </div>
+        </div>
+
+        <div id = "blue-shot">
+            <h3>Power (0-100)</h3>
+            <input type="number" id="blue-power" required>
+            <h3>Angle</h3>
+            <input type="number" id="blue-angle" required>
+            <button onclick = "blueAction()" type = "submit">FIRE!</button>
+        </div>
+
+        <div id = "red-shot" style= "display:none">
+            <h3>Power (0-100)</h3>
+            <input type="number" id="red-power" required>
+            <h3>Angle</h3>
+            <input type="number" id="red-angle" required>
+            <button onclick = "redAction()" type = "submit">FIRE!</button>
+        </div>
+    <script src= "./tanks.js"></script>
+    </body>
+</html>
