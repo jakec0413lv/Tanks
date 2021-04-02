@@ -22,7 +22,7 @@ cannonBall.style.bottom = 20 + "px";
 cannonBall.style.left = tank1XStart + 25 + "px";
 
 cannonBall2.style.bottom = 20 + "px";
-cannonBall2.style.left = tank2End - 27 + "px";
+cannonBall2.style.left = tank2Start + "px";
 
 function Reset(){
     redScore = 0;
@@ -94,7 +94,7 @@ function redAction(){
 
     cannonBall2.style.display = '';
     
-    let x0 = tank2End - 27;
+    let x0 = tank2Start - 1;
     let y0 = 20;
     let v0 = document.getElementById("red-power").value;
     let g = 9.8;
@@ -131,3 +131,30 @@ function redAction(){
 }
 }
 
+function moveBlueTank(modifier) {
+
+    let id = setInterval(tankMotion, 100);
+    let counter = 0;
+    function tankMotion() {
+        if(counter === 20){
+            clearInterval(id);
+        }
+        tank1XStart += (modifier)*2;
+        tank1.style.left = tank1XStart + "px";
+        counter++;
+    }
+}
+
+function moveRedTank(modifier) {
+    console.log(tank2End)
+    let id = setInterval(tankMotion, 100);
+    let counter = 0;
+    function tankMotion() {
+        if(counter === 20){
+            clearInterval(id);
+        }
+        tank2Start -= (modifier)*2;
+        tank2.style.left = tank2Start + "px";
+        counter++;
+    }
+}

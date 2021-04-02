@@ -27,6 +27,8 @@
             <h3>Angle</h3>
             <input type="number" id="blue-angle" required>
             <button onclick = "blueAction()" type = "submit">FIRE!</button>
+            <button onclick = "moveBlueTank(1)" type = "submit">MOVE FORWARD</button>
+            <button onclick = "moveBlueTank(-1)" type = "submit">MOVE BACKWARD</button>
         </div>
 
         <div id = "red-shot" style= "display:none">
@@ -35,6 +37,8 @@
             <h3>Angle</h3>
             <input type="number" id="red-angle" required>
             <button onclick = "redAction()" type = "submit">FIRE!</button>
+            <button onclick = "moveRedTank(1)" type = "submit">MOVE FORWARD</button>
+            <button onclick = "moveRedTank(-1)" type = "submit">MOVE BACKWARD</button>
         </div>
     <script src= "./tanks.js"></script>
     </body>
