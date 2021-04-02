@@ -24,5 +24,8 @@ In progress:
 
 + Add different weapon types
 + Clean up Power/Angle/Button UI
-+ Clean up output UI [Have a CSS / HTML element rather than an alert]
++ ~Clean up output UI [Have a CSS / HTML element rather than an alert]~
++ ~Add input validation [Max 100, Min 0]~ **Important**
++ ~Add input validation [0 - 180 Angles]~ **Important**
++ Add height to hitbox **Important**
 

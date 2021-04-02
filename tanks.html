@@ -7,38 +7,52 @@
     </head>
 
     <body>
-        <div id = "title"></div>
+        
+        <div id = "title">
+            <h1>Tanks!</h1>
+        </div>
         <div id = "playing-field">
             <div id = "object" style = "display:none"> </div>
             <div id = "object2" style= "display:none"> </div>
             <div id = "tank-1"></div>
             <div id = "tank-2"></div>
-            <button onclick = "Reset()">Reset</button>
             <div id = scoreboard>
                 <p>Score</p>
                 <p id = "blue-score" style= "color:blue">0</p>
                 <p id = "red-score" style = "color:red">0</p>
+                <p id = 'hit-miss'></p>
             </div>
+            <button onclick = "Reset()">Reset</button>
         </div>
 
         <div id = "blue-shot">
             <h3>Power (0-100)</h3>
-            <input type="number" id="blue-power" required>
+            <input type="number" id="blue-power" required max= 100 min = 0>
             <h3>Angle</h3>
-            <input type="number" id="blue-angle" required>
-            <button onclick = "blueAction()" type = "submit">FIRE!</button>
-            <button onclick = "moveBlueTank(1)" type = "submit">MOVE FORWARD</button>
-            <button onclick = "moveBlueTank(-1)" type = "submit">MOVE BACKWARD</button>
+            <input type="number" id="blue-angle" required max = 180 min = 0>
+            <div id = "buttonBar">
+                <button id = "blue-forward" onclick = "moveBlueTank(1)" type = "submit">MOVE FORWARD</button>
+                <button id = "blue-backward" onclick = "moveBlueTank(-1)" type = "submit">MOVE BACKWARD</button>
+            </div>
+            <button id = "blue-fire" onclick = "blueAction()" type = "submit">FIRE!</button>
+            <div>
+                <p id = 'blue-move-counter'>Move Counter: _ _ _</p>
+            </div>
         </div>
 
         <div id = "red-shot" style= "display:none">
             <h3>Power (0-100)</h3>
-            <input type="number" id="red-power" required>
+            <input type="number" id="red-power" required max= 100 min = 0>
             <h3>Angle</h3>
-            <input type="number" id="red-angle" required>
-            <button onclick = "redAction()" type = "submit">FIRE!</button>
-            <button onclick = "moveRedTank(1)" type = "submit">MOVE FORWARD</button>
-            <button onclick = "moveRedTank(-1)" type = "submit">MOVE BACKWARD</button>
+            <input type="number" id="red-angle" required max= 180 min = 0>
+            <div id = "buttonBar">
+                <button id = "red-forward" onclick = "moveRedTank(1)" type = "submit" >MOVE FORWARD</button>
+                <button id = "red-backward" onclick = "moveRedTank(-1)" type = "submit">MOVE BACKWARD</button>
+            </div>
+                <button id = "red-fire" onclick = "redAction()" type = "submit">FIRE!</button>
+            <div>
+                <p id = "red-move-counter">Move Counter: _ _ _</p>
+            </div>
         </div>
     <script src= "./tanks.js"></script>
     </body>

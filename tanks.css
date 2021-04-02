@@ -1,11 +1,12 @@
+body{
+    background-image: url('https://onlyvectorbackgrounds.com/wp-content/uploads/2019/01/Simple-Vector-Geometric-Background-White.jpg');
+    text-align: center;
+}
+
 #title{
-    width: 350px;
-    height: 100px;
-    margin: 0 auto;
-    border: black 2px;
-    border-radius: 5%;
-    background-image: url("TanksTitle.PNG");
-    background-size: cover;
+   text-align: center;
+   font-size: 25px;
+   color: green;
 }
 
 #scoreboard{
@@ -17,6 +18,11 @@
     height: 100px;
     border: 2px black solid;
     margin: 0 auto;
+}
+
+#scoreboard {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #scoreboard p {
@@ -37,7 +43,7 @@
 #object {
     width: 5px;
     height: 5px;
-    background-color: black;
+    background-color: grey;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -46,7 +52,7 @@
 #object2 {
     width: 5px;
     height: 5px;
-    background-color: black;
+    background-color: grey;
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -81,4 +87,8 @@
 
 #red-shot h3{
     color: red;
+}
+
+#buttonBar {
+    margin-top: 10px;
 }
